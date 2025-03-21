@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Reserva tu Libro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Reserva Historias y Anécdotas de Reyes</h1>
+  </header>
+
+  <main>
+    <section class="book-info">
+      <img src="images/HyA_Reyes_Portada.jpg" alt="Portada del Libro" class="book-cover">
+      <div class="book-details">
+        <h2>Historias y Anécdotas de Reyes (y que el título no te confunda)</h2>
+        <p>Autor: Alejandro Reyes Ruiz</p>
+        <p>Precio: ?</p>
+        <p>Descripción: Este libro cuenta las historias y anécdotas de Reyes</p>
+      </div>
+    </section>
+
+    <section class="purchase-form">
+      <h3>Pídelo ya:</h3>
+      <form id="buyBookForm" action="mailto:victor.reyes.mar@gmail.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="Nombre" required>
+      
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="Correo Electrónico" required>
+      
+        <label for="direccion">Dirección de Envío:</label>
+        <input type="text" id="direccion" name="Dirección de Envío" required>
+      
+        <button type="submit">Reservar</button>
+      </form>
+      
+      <p id="mensaje"></p>
+    </section>
+  </main>
+
+  <section class="book-preview">
+    <h3>Vista Previa: De forma gratuita, puede leer el primer capítulo del libro:</h3>
+    <iframe src="docs/Master_Thesis_VR.pdf" width="100%" height="500px"></iframe>
+    <p><a href="docs/muestra-libro.pdf" download="muestra-libro.pdf" class="download-btn">📥 Descargar PDF</a></p>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Tienda de Libros. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
